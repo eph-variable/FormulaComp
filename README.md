@@ -16,8 +16,8 @@ class Maths:
 	def adding(a, b):
 		return lambda a, b: a + b
 
-# object = Maths.adding(12, 23)
-# print(object(1,2))
+object = Maths.adding(12, 23)
+print(object(1,2)) # just for testing
 
 
 class PhysicsKinematics:
@@ -124,10 +124,9 @@ class PhysicsKinematics:
 			print('CENTRIPETAL FORCE: ', Fc)
 			quit()
 
-
+# YOU HAVE TO DETERMINE FIRST THE NUMBER OF P AND Q IN THE GENE POOL.
 class Biology:
 	def hardyweinberg(p, q, population): # p is the number of dominant allele frequency in the gene pool. q is the recesive allele frequency in the gene pool
-	# YOU HAVE TO DETERMINE FIRST THE NUMBER OF P AND Q IN THE GENE POOL.
 		print('\nHARDY-WEINBERG PRINCIPLE\n')
 		if p and q and population != 0:
 			print('--GIVEN--\nDOMINANT: {}\nRECESSIVE: {}\nPOPULATION: {}\n'.format(p,q,population))
@@ -206,17 +205,17 @@ class Electrics:
 		
 
 		
-# Electrics.current(100,2)
-# Electrics.electron_mass()
-# PhysicsKinematics.tailgating(iv=100, reaction_t=.45, gap=2.0, acceleration_A=-9.8, acceleration_B=-9.2)
+Electrics.current(100,2)
+Electrics.electron_mass()
+PhysicsKinematics.tailgating(iv=100, reaction_t=.45, gap=2.0, acceleration_A=-9.8, acceleration_B=-9.2)
 
-# PhysicsKinematics.freefall(iv=0, height=100, t=3)
+PhysicsKinematics.freefall(iv=0, height=100, t=3)
 
-# print(dir(random))
+print(dir(random))
 
-# Biology.hardyweinberg(p=500, q=500, population=1000)
+Biology.hardyweinberg(p=500, q=500, population=1000)
 
-# PhysicsKinematics.projectile(velocity=12, angle=30, gravity=9.8)
+PhysicsKinematics.projectile(velocity=12, angle=30, gravity=9.8)
 
 PhysicsKinematics.centripetal(tanvel=0, tanvel2=0, angvel=0, angvel2=0, mass=0, radius=0, ang_accel=0, tan_accel=0,cent_accel=0,f=0,T=0, tacc=0, an_angle=0, staticfriction=0.4) # FOR THE ACTIVITY
 
